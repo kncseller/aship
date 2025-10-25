@@ -19720,17 +19720,12 @@ setTimeout(function(){
  })(window);
 
 
-
  var AppConfig = { 
-  "logo":"https://f7.donggiatri.com/users/f7vay/dist/assets/logo.png",
-  
+	"logo":"https://f7.donggiatri.com/users/aship/dist/assets/logo.png",
+  "nameApp":"aship",
   "theme":{
     "bg":"#fff",
     "color":"#333"
-  },
-  "device":{
-     "desktop":1,
-     "mobile":1
   },
   "intro":{
     "html":"",
@@ -19740,22 +19735,20 @@ setTimeout(function(){
     "nameApp":"NHN",
     "version":"version 1.0"
   },
-    "upload":{
-     "url":"https://f7.donggiatri.com/users/demo/f7vay/upload.php"
+  "upload":{
+     "url":"https://f7.donggiatri.com/users/demo/aship/upload/"
   },
   "domain":{
     "version":"1.0",
     "local":0,
     "islocal":0,
     "typelocal":"beta", 
-    "beta":"https://f7.donggiatri.com/users/demo/f7vay/dist/",
-    "api":"https://f7.donggiatri.com/users/demo/f7vay/api/",
-    "live":"https://f7.donggiatri.com/users/demo/f7vay/dist/",
-    "admin":"https://f7.donggiatri.com/users/demo/f7vay/admin/",
-    "root":"https://f7.donggiatri.com/users/demo/f7vay/",
-    "upload":"https://f7.donggiatri.com/users/demo/f7vay/uploads/"
+    "beta":"https://f7.donggiatri.com/users/demo/aship/dist/",
+    "live":"https://f7.donggiatri.com/users/demo/aship/dist/",
+    "api":"https://f7.donggiatri.com/users/demo/aship/api/",
+    "upload":"https://f7.donggiatri.com/users/demo/aship/uploads/"
   },
-  "url_f7":"https://f7.donggiatri.com/users/demo/f7vay/dist/",
+  "url_f7":"https://f7.donggiatri.com/users/demo/aship/dist/",
   "version":{
     "check":0, 
     "code":"1.0",
@@ -19797,20 +19790,16 @@ setTimeout(function(){
       "cndUrl": "https://cnd.donggiatri.com/upload.php",
       "upload":"https://chat.donggiatri.com/upload.php?"
   },
-  "nameApp":"Vay MB",
-  "title":"Vay MB",
-  "name": "VayMB", 
-  "apikey":"demo",
-    "react-native-google-mobile-ads": {
-      "android_app_id": "ca-app-pub-1730627692868260~2775566177",
-      "ios_app_id": "ca-app-pub-8529695879231140~2535990115"
-  },
-  "wc":{
-    "domain":"acua.donggiatri.com"
-  }
+	"title":"aship",
+	"name": "aship", 
+	"apikey":"demo",
+	  "react-native-google-mobile-ads": {
+	    "android_app_id": "ca-app-pub-1730627692868260~2775566177",
+	    "ios_app_id": "ca-app-pub-8529695879231140~2535990115"
+	}
 };
 window.sdk={
-  user_sesion : "VayMB__u", 
+  user_sesion : "aship__u", 
 };
  window.root_url = '/'; 
  
@@ -19825,9 +19814,6 @@ function site_url_root(url){
   return window.root_url+'/'+(url||"");
 }
 
-function site_url_data(url){
-  return AppConfig.domain.root+"mockdata/"+url;
-}
 
 function site_url_ajax(url){
   return `${AppConfig.domain.api}/${url}`;
@@ -19861,8 +19847,8 @@ function setStateApp(data){
       }
    }
 }
- function LoadCSS(e){return new Promise((function(n,t){var o=document.createElement("link");o.rel="stylesheet",o.href=e,document.head.appendChild(o),o.onload=function(){n()}}))}function LoadJS(e){return new Promise((function(n,t){var o=document.createElement("script");o.src=e,document.head.appendChild(o),o.onload=function(){n()}}))}
-$(document).ready(function(){
+function LoadCSS(e){return new Promise((function(n,t){var o=document.createElement("link");o.rel="stylesheet",o.href=e,document.head.appendChild(o),o.onload=function(){n()}}))}function LoadJS(e){return new Promise((function(n,t){var o=document.createElement("script");o.src=e,document.head.appendChild(o),o.onload=function(){n()}}))}
+window.onload = function(){
      function ready_go(r){ 
              if(app){
                app.name = r.name||r.nameApp||r.title;
@@ -19880,45 +19866,22 @@ $(document).ready(function(){
                 if(window.AppStorege&&window.AppStorege.refetch){
                     window.AppStorege.refetch();
                   }
-
-                /*
-                if(document.location.origin=='file://'){
-                   window.root_url = document.location.pathname.split('/').slice(0,-1).join('/');
-                }else{
-                  if(!document.location.host.includes('localhost')){
-                    window.root_url = r.domain.live;
-                  } 
-                }
-
-                if(!document.location.host.includes('localhost')){
-                    window.root_url = r.domain.live;
-                } 
-                */
-
-
-               $(document).trigger("Config",[app]); 
-
-         
-              
-             
+ 
+               $(document).trigger("Config",[app]);  
+               $('body').addClass('loaded'); 
             }
              
     }
     function ready(){
-      
+        //
+    
      
       runmain(function(u,pointer){
-
          if(u){
-
-               var nn = document.querySelector('meta[name="auth-token"]');
-              if(nn){
-              	nn.setAttribute("content",u.passkey); 
-              }
-
-              
+               document.querySelector('meta[name="auth-token"]').setAttribute("content",u.passkey); 
             }
          $(document).trigger('onInit');
+
 
            routeEnableAsync();
            if(typeof AppConfig =='object'){
@@ -19996,6 +19959,7 @@ $(document).ready(function(){
              }
            }
         }).on("home_Before", function (event, e, page) {
+
             if(first==0){
                 first=1;
            
@@ -20021,7 +19985,13 @@ $(document).ready(function(){
                     $(this).remove();
                 }); 
             } 
-      });
+      });  
+          
+        if(window.objparams&&window.objparams.passkey){
+          
+          return "/user/passkey/";
+        }
+         
           
           if(document.location.hash&&document.location.hash!="#"){
              pointer= document.location.hash.replace("#","");
@@ -20044,51 +20014,26 @@ $(document).ready(function(){
           return '/home/';
       });
     }
- 
+var root = "/build/";
         document.body.insertAdjacentHTML("beforeend", templateApp);
-            LoadJS('./build/app.min.js?t=1758175015114').then(function(){
-
-                // LoadCSS('./build/app.min.css?t=1758172450476').then(function(){
-                    //LoadCSS('./build/font.css?t=1758172450476').then(function(){});
-                    AppStorege.ping().then(ready);
-                    
-                     
-                       $('.loadingabc').remove(); 
-                        window.rebuild($('body').addClass('loaded')); 
-
+            LoadJS(root+'app.min.js?t=1758461253136').then(function(){
+                // LoadCSS(root+'font.css?t=1758461253136').then(function(){});     
+                // LoadCSS(root+'app.min.css?t=1758461253136').then(function(){
+                     window.rebuild($('body').addClass("loaded"));
+                      $('.loadingabc').remove(); 
                 // });
-                
-                
                 
                 //listen allbuild done
                 $(document).on('onInit',function(){
                    
-                });
-            
 
-                var first= 0;
-                $(document).on("home_Init", function (event, e, page) {
-                    if(first==0){
-                        first=1;
-                   
-                        
-                         var u = window.user.hasLogin();
-                        if(!u){
-                            '/user/login/'.navigate();
-                        }else{
-                            app.pointer.navigate();
-                        }
-                        $('.loadingabc').fadeOut("slow",function(){
-                            $(this).remove();
-                        }); 
-                    } 
                 });
-                ///
+ 
                 AppStorege.ping().then(ready);
   
             });
         
-});
+}
 var templateApp = `<div class="barmenudesktop">
       <div class="logo" data-router="/home/">
          <img data-src="../assets/logo.png" alt="">
@@ -20235,7 +20180,13 @@ var templateApp = `<div class="barmenudesktop">
           </div>
          
           <div class="footpanel">
-            
+            <p>F7 App</p>
+
+                <p><a class="external" href="https://www.google.com/maps/place/87+L%C3%AA+L%E1%BB%A3i,+Ph%C6%B0%E1%BB%9Dng+4,+Th%C3%A0nh+ph%E1%BB%91+V%C5%A9ng+T%E1%BA%A7u,+B%C3%A0+R%E1%BB%8Ba+-+V%C5%A9ng+T%C3%A0u,+Vietnam/@10.3584824,107.0722467,17z/data=!4m15!1m8!3m7!1s0x31756fbfac78d957:0xdcbc8d60a5bf7c8c!2zODcgTMOqIEzhu6NpLCBQaMaw4budbmcgNCwgVGjDoG5oIHBo4buRIFbFqW5nIFThuqd1LCBCw6AgUuG7i2EgLSBWxaluZyBUw6B1LCBWaWV0bmFt!3b1!8m2!3d10.3584771!4d107.0748216!16s%2Fg%2F11fsjw768l!3m5!1s0x31756fbfac78d957:0xdcbc8d60a5bf7c8c!8m2!3d10.3584771!4d107.0748216!16s%2Fg%2F11fsjw768l?entry=ttu" target="_blank"><i class="far fa-map"></i> Địa chỉ : Số 87 Lê Lợi, Phường4, Thành phố Vũng Tàu, Tỉnh Bà Rịa - Vũng Tàu, Việt Nam</a></p>
+
+                <p><i class="far fa-envelope"></i> Email : <a href="mailto:thcsduytanvt@gmail.com">f7app@gmail.com</a></p>
+
+                <p><i class="fas fa-phone"></i> Điện thoai : <br/><a href="tel:0254.36254.089">0254.36254.089</a> <br/> <a href="tel:0254.3542.404">0254.3542.404</a></p>
           </div>
            
         </div>
@@ -20249,4 +20200,4 @@ var templateApp = `<div class="barmenudesktop">
       <!--  -->
     
   </div> 
-  </div>`
+  </div>`;
