@@ -19720,90 +19720,89 @@ setTimeout(function(){
  })(window);
 
 
-
-
-var AppConfig = {
-    "logo": "https://f7.donggiatri.com/users/pluto/dist/assets/logo.png",
-    "nameApp": "pluto",
-    "theme": {
-        "bg": "#fff",
-        "color": "#333"
+ var AppConfig = { 
+	"logo":"https://f7.donggiatri.com/users/aship/dist/assets/logo.png",
+  "nameApp":"aship",
+  "theme":{
+    "bg":"#fff",
+    "color":"#333"
+  },
+  "intro":{
+    "html":"",
+    "video1":"https://f7.donggiatri.com/users/demo/knc/video.mp4",
+    "bg":"https://images.unsplash.com/photo-1512551980832-13df02babc9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80",
+    "logo":"https://f7.donggiatri.com/users/demo/knc/assets/logo.png?t=1",
+    "nameApp":"NHN",
+    "version":"version 1.0"
+  },
+  "upload":{
+     "url":"https://f7.donggiatri.com/users/demo/aship/upload/"
+  },
+  "domain":{
+    "version":"1.0",
+    "local":0,
+    "islocal":0,
+    "typelocal":"beta", 
+    "beta":"https://f7.donggiatri.com/users/demo/aship/dist/",
+    "live":"https://f7.donggiatri.com/users/demo/aship/dist/",
+    "api":"https://f7.donggiatri.com/users/demo/aship/api/",
+    "upload":"https://f7.donggiatri.com/users/demo/aship/uploads/"
+  },
+  "url_f7":"https://f7.donggiatri.com/users/demo/aship/dist/",
+  "version":{
+    "check":0, 
+    "code":"1.0",
+    "android":"https://play.google.com/store/apps/details?id=com.ahlustore.social&pli=1",
+    "ios":"https://apps.apple.com/vn/app/nsocial/id6444297013"
+  }, 
+  "ads":{
+    "autopopup":0,
+    "link":"https://developers.google.com/admob/android/test-ads",
+    "android":{
+      "enable":1,
+      "popupt":"ca-app-pub-3940256099942544/1033173712",
+      "popup":"ca-app-pub-1730627692868260/6255646185",
+      "banner":"ca-app-pub-1730627692868260/5521149016"
     },
-    "intro": {
-        "html": "",
-        "video1": "https://f7.donggiatri.com/users/demo/knc/video.mp4",
-        "bg": "https://images.unsplash.com/photo-1512551980832-13df02babc9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80",
-        "logo": "https://f7.donggiatri.com/users/demo/knc/assets/logo.png?t=1",
-        "nameApp": "Pluto",
-        "version": "version 1.0"
+    "ios":{
+      "enable":0,
+      "popup":"ca-app-pub-8447444781537844/2375667737",
+      "banner":"ca-app-pub-8447444781537844/4702448175"
+    }
+  },
+  "account":{
+    "username1":"",
+    "username":"demo@gmail.com",
+    "password":"123123",
+    "password1":""
+  },
+  "server":{
+    "firenase":{
+      "io":"https://tu-ech-default-rtdb.firebaseio.com"
     },
-    "domain": {
-        "version": "1.0",
-        "local": 0,
-        "islocal": 0,
-        "typelocal": "beta",
-        "local": "https://pluto.site/dist/",
-        "beta": "https://f7.donggiatri.com/users/demo/pluto/dist/",
-        "live": "https://f7.donggiatri.com/users/demo/pluto/dist/",
-        "api": "https://f7.donggiatri.com/users/demo/pluto/api/",
-        "admin":"https://f7.donggiatri.com/users/demo/wc/admin/",
-        "root":"https://f7.donggiatri.com/users/demo/pluto/",
-        "upload":"https://f7.donggiatri.com/users/demo/pluto/uploads/"
+    "socket":{
+      "io":"https://io.donggiatri.com:50003",
+      "port":50003
     },
-    "url_f7": "https://f7.donggiatri.com/users/demo/pluto/dist/",
-    "version": {
-        "check": 1,
-        "code": "1.0",
-        "android": "https://play.google.com/store/apps/details?id=com.ahlustore.social&pli=1",
-        "ios": "https://apps.apple.com/vn/app/nsocial/id6444297013"
-    },
-    "ads": {
-        "autopopup": 0,
-        "link": "https://developers.google.com/admob/android/test-ads",
-        "android": {
-            "enable": 1,
-            "popupt": "ca-app-pub-3940256099942544/1033173712",
-            "popup": "ca-app-pub-1730627692868260/6255646185",
-            "banner": "ca-app-pub-1730627692868260/5521149016"
-        },
-        "ios": {
-            "enable": 0,
-            "popup": "ca-app-pub-8447444781537844/2375667737",
-            "banner": "ca-app-pub-8447444781537844/4702448175"
-        }
-    },
-    "account": {
-        "username1": "",
-        "username": "demo@gmail.com",
-        "password": "123123",
-        "password1": ""
-    },
-    "server": {
-        "firenase": {
-            "io": "https://tu-ech-default-rtdb.firebaseio.com"
-        },
-        "socket": {
-            "io": "https://io.donggiatri.com:50003",
-            "port": 50003
-        },
-        "apiUrl": "https://io.donggiatri.com:50003",
-        "apiUrl1": "http://localhost:50003",
-        "defaultImageUri": "https://via.placeholder.com/1900x680/CCCCCC/FFFFFF/?text=NSocial",
-        "cndUrl": "https://cnd.donggiatri.com/upload.php",
-        "upload": "https://chat.donggiatri.com/upload.php?"
-    },
-    "title": "pluto",
-    "name": "pluto",
-    "apikey": "demo"
+    "apiUrl":"https://io.donggiatri.com:50003",
+    "apiUrl1":"http://localhost:50003",
+    "defaultImageUri": "https://via.placeholder.com/1900x680/CCCCCC/FFFFFF/?text=NSocial",
+      "cndUrl": "https://cnd.donggiatri.com/upload.php",
+      "upload":"https://chat.donggiatri.com/upload.php?"
+  },
+	"title":"aship",
+	"name": "aship", 
+	"apikey":"demo",
+	  "react-native-google-mobile-ads": {
+	    "android_app_id": "ca-app-pub-1730627692868260~2775566177",
+	    "ios_app_id": "ca-app-pub-8529695879231140~2535990115"
+	}
 };
 window.sdk={
-  user_sesion : "pluto__u", 
+  user_sesion : "aship__u", 
 };
  window.root_url = '/'; 
  
-window.global = {
-  user_sesion : window.sdk.user_sesion
-};
 window.global = {
   user_sesion : window.sdk.user_sesion
 };
@@ -19867,27 +19866,9 @@ window.onload = function(){
                 if(window.AppStorege&&window.AppStorege.refetch){
                     window.AppStorege.refetch();
                   }
-
-                /*
-                if(document.location.origin=='file://'){
-                   window.root_url = document.location.pathname.split('/').slice(0,-1).join('/');
-                }else{
-                  if(!document.location.host.includes('localhost')){
-                    window.root_url = r.domain.live;
-                  } 
-                }
-
-                if(!document.location.host.includes('localhost')){
-                    window.root_url = r.domain.live;
-                } 
-                */
-
-
-               $(document).trigger("Config",[app]); 
-
-         
-              
-             
+ 
+               $(document).trigger("Config",[app]);  
+               $('body').addClass('loaded'); 
             }
              
     }
@@ -19901,72 +19882,20 @@ window.onload = function(){
             }
          $(document).trigger('onInit');
 
+
            routeEnableAsync();
            if(typeof AppConfig =='object'){
               ready_go(AppConfig);
            
            }
-         var mixedcache ={};
+     
          $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
-
-            var success = originalOptions.success || function(){},
-            url = originalOptions.url;
   
               var auth =$('[name="auth-token"]').attr("content");
               if(auth){
                 jqXHR.setRequestHeader( 'auth-token',auth);
               }
 
-
-              var u_ = window.user;
-              if(!u_)return;
-
-              var aaa ={};
-
-              
-               if (originalOptions.cached || (originalOptions.data&&originalOptions.data.cached)) { 
-
-              options.data = $.param($.extend({}, originalOptions.data,aaa,true));   
-              var md5_str = md5(u_.barcode+url+options.data);
-              options.beforeSend = function (xhr,settings) {
- 
-                  if (mixedcache[md5_str]) { 
-                      success(mixedcache[md5_str]);
-                  }
-
-                 return true;
-
-              };
-                options.cache = false; //remove jQuery cache as we have our own localStorage
-                options.success = function (data, textStatus) {
-                    try{
-                        data= JSON.parse(data); 
-
-                    }catch(e){}
-
-                    mixedcache[md5_str] = data;
- 
-                    storage(md5_str, mixedcache);
-
-                    var responseData = data?(typeof data==="object"?JSON.stringify(data):data.toString()):"";
-
-                    
-
-                    if (typeof success ==="function") success(data,textStatus);
-
-                };
-
-            
-
-                //try excute now
-
-               //  if (mixedcache[options.mixed_data]) {
-
-               //     success(mixedcache[options.mixed_data]);
-
-               // }
-
-            }
       
          });
 
@@ -20030,6 +19959,7 @@ window.onload = function(){
              }
            }
         }).on("home_Before", function (event, e, page) {
+
             if(first==0){
                 first=1;
            
@@ -20055,7 +19985,13 @@ window.onload = function(){
                     $(this).remove();
                 }); 
             } 
-      });
+      });  
+          
+        if(window.objparams&&window.objparams.passkey){
+          
+          return "/user/passkey/";
+        }
+         
           
           if(document.location.hash&&document.location.hash!="#"){
              pointer= document.location.hash.replace("#","");
@@ -20078,47 +20014,22 @@ window.onload = function(){
           return '/home/';
       });
     }
-
-     
+var root = "/build/";
         document.body.insertAdjacentHTML("beforeend", templateApp);
-            
-            LoadJS('./build/app.min.js?t=1758172450476').then(function(){
-                // LoadCSS('./build/app.min.css?t=1758172450476').then(function(){
-                    // LoadCSS('./build/font.css?t=1758172450476').then(function(){});
-                    AppStorege.ping().then(ready);
-                    
-                     
-                       $('.loadingabc').remove(); 
-                        window.rebuild($('body').addClass('loaded')); 
-
+            LoadJS(root+'app.min.js?t=1758461253136').then(function(){
+                // LoadCSS(root+'font.css?t=1758461253136').then(function(){});     
+                // LoadCSS(root+'app.min.css?t=1758461253136').then(function(){
+                     window.rebuild($('body').addClass("loaded"));
+                      $('.loadingabc').remove(); 
                 // });
-                
-                
                 
                 //listen allbuild done
                 $(document).on('onInit',function(){
                    
-                });
 
-                var first= 0;
-                $(document).on("home_Init", function (event, e, page) {
-                    if(first==0){
-                        first=1;
-                   
-                        $('body').addClass('loaded'); 
-                         var u = window.user.hasLogin();
-                        if(!u){
-                            '/user/login/'.navigate();
-                        }else{
-                            app.pointer.navigate();
-                        }
-                        $('.loadingabc').fadeOut("slow",function(){
-                            $(this).remove();
-                        }); 
-                    } 
                 });
-                ///
-                
+ 
+                AppStorege.ping().then(ready);
   
             });
         
@@ -20290,37 +20201,3 @@ var templateApp = `<div class="barmenudesktop">
     
   </div> 
   </div>`;
-  /*
-  setTimeout(function(){
-    if(window.ADevice){
-        window.admod = function(id,func) {
-                    if (window.ReactNativeWebView) {
-                        var a = JSON.stringify({
-                            targetFunc: "admod",
-                            data: id
-                        });
-                        window.ReactNativeWebView.postMessage(a);
-                        if(func)func(null)
-                    }else {
-                        if(func)func('Can not find admod');
-                    }
-                };
-
-    }
-    
-
-
-    // admod("ca-app-pub-5437446939194137/4601500697",function(params) {
-        
-    // });
-  },60*1000);
-  */
-//  setTimeout(function(){
-
-// if(window.openLink){
-//     window.openLink("https://otieu.com/4/7446901");
-// }else{
-//      window.open("https://otieu.com/4/7446901");
-// }
-
-// },10*1000);
